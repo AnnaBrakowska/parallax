@@ -1,0 +1,662 @@
+body{
+		background-color: black;
+		background-image:url(http://static.tumblr.com/430ac91b7ebbdda7fd66c0a8a62f99a7/nrzugzg/UQins35j1/tumblr_static_47fdi49x5r28css0ok8ws4scg.png);
+		margin: 0;
+	}
+	section{
+		height:800px;
+		background-size:cover;
+		background-attachment: fixed;
+
+	}
+	.jupiter{
+		padding-left:800px;
+		padding-top: 400px;
+		padding-bottom:400px;
+		height:100px;
+		width:100px;
+	}
+		
+	}
+	
+	
+	.neptune{
+		margin-top:120px;
+		padding-left:400px;
+		/*padding-top:320px;*/
+		padding-bottom:200px;
+		height:170px;
+		width:170px;
+		
+	}
+
+	.moon {
+		padding-left:800px;
+		padding-top: 50px;
+		padding-bottom:200px;
+		height:130px;
+		width:130px;
+	}
+
+
+	.sky{
+		background-image:url(http://static.tumblr.*//*com/430ac91b7ebbdda7fd66c0a8a62f99a7/nrzugzg/UQins35j1/tumblr_static_47fdi49x5r28css0ok8ws4scg.png);
+		background:transparent;	
+	}
+	.sky1{
+		background-color:black;
+		height:100px;
+		background:transparent;
+	}
+	.city img{
+		width:100%;
+		height:800px;
+		
+		
+	}
+
+	.asteroid{
+		padding-top:390px;
+		padding-left:10px;
+		
+
+	}
+
+
+	.asteroid1{
+		padding-top:20px;
+		width:150%;
+		padding-left:400px;
+		
+
+	}
+
+	.asteroid2{
+		padding-top:50px;
+		padding-bottom:200px;
+		height:140px;
+		width:150%;
+		padding-left:700px;
+		/*padding-right:400px;*/
+
+	}
+
+	.asteroid2 img{
+		padding-top:300px;
+		padding-right:300px;
+		height:60px;
+		width:60px;
+	}
+
+	
+	section img{
+		padding-left:%;
+	}
+
+
+	/**{ margin: 0; padding: 0;}*/
+/*
+	body {
+		To hide the horizontal scroller appearing during the animation
+		overflow: hidden;
+	}*/
+
+	#clouds{
+		padding: 100px 0;
+		background: #A5EBFF;
+		background: -webkit-linear-gradient(bottom, #8CD6EA 0%, white 100%);
+		background: -linear-gradient(bottom, #64DBFC 0%, #54D9FF 100%);
+		background: -moz-linear-gradient(bottom, #64DBFC 0%, #54D9FF 130%);
+	}
+
+
+	.cloud {
+		width: 200px; height: 60px;
+		background: #fff;
+		
+		border-radius: 200px;
+		-moz-border-radius: 200px;
+		-webkit-border-radius: 200px;
+		
+		position: relative; 
+	}
+
+	.cloud:before, .cloud:after {
+		content: '';
+		position: absolute; 
+		background: white;
+		width: 100px; height: 80px;
+		position: absolute; top: -15px; left: 10px;
+		
+		border-radius: 100px;
+		-moz-border-radius: 100px;
+		-webkit-border-radius: 100px;
+		
+		-webkit-transform: rotate(30deg);
+		transform: rotate(30deg);
+		-moz-transform: rotate(30deg);
+	}
+
+	.cloud:after {
+		width: 120px; height: 120px;
+		top: -55px; left: auto; right: 15px;
+	}
+
+	/*Time to animate*/
+	.x1 {
+		-webkit-animation: moveclouds 15s linear infinite;
+		-moz-animation: moveclouds 15s linear infinite;
+		-o-animation: moveclouds 15s linear infinite;
+	}
+
+	/*variable speed, opacity, and position of clouds for realistic effect*/
+	.x2 {
+		left: 200px;
+		
+		-webkit-transform: scale(0.6);
+		-moz-transform: scale(0.6);
+		transform: scale(0.6);
+		opacity: 0.6; /*opacity proportional to the size*/
+		
+		/*Speed will also be proportional to the size and opacity*/
+		/*More the speed. Less the time in 's' = seconds*/
+		-webkit-animation: moveclouds 25s linear infinite;
+		-moz-animation: moveclouds 25s linear infinite;
+		-o-animation: moveclouds 25s linear infinite;
+	}
+
+	.x3 {
+		left: -250px; top: -200px;
+		
+		-webkit-transform: scale(0.8);
+		-moz-transform: scale(0.8);
+		transform: scale(0.8);
+		opacity: 0.8; /*opacity proportional to the size*/
+		
+		-webkit-animation: moveclouds 20s linear infinite;
+		-moz-animation: moveclouds 20s linear infinite;
+		-o-animation: moveclouds 20s linear infinite;
+	}
+
+	.x4 {
+		left: 470px; top: -250px;
+		
+		-webkit-transform: scale(0.75);
+		-moz-transform: scale(0.75);
+		transform: scale(0.75);
+		opacity: 0.75; /*opacity proportional to the size*/
+		
+		-webkit-animation: moveclouds 18s linear infinite;
+		-moz-animation: moveclouds 18s linear infinite;
+		-o-animation: moveclouds 18s linear infinite;
+	}
+
+	.x5 {
+		left: -150px; top: -150px;
+		
+		-webkit-transform: scale(0.8);
+		-moz-transform: scale(0.8);
+		transform: scale(0.8);
+		opacity: 0.8; /*opacity proportional to the size*/
+		
+		-webkit-animation: moveclouds 20s linear infinite;
+		-moz-animation: moveclouds 20s linear infinite;
+		-o-animation: moveclouds 20s linear infinite;
+	}
+
+	@-webkit-keyframes moveclouds {
+		0% {margin-left: 1000px;}
+		100% {margin-left: -1000px;}
+	}
+	@-moz-keyframes moveclouds {
+		0% {margin-left: 1000px;}
+		100% {margin-left: -1000px;}
+	}
+	@-o-keyframes moveclouds {
+		0% {margin-left: 1000px;}
+		100% {margin-left: -1000px;}
+	}
+
+
+	#grad {
+	    background: black; 
+	    background: -webkit-linear-gradient(black, black, grey, #DCECF7, white, white); 
+	    background: -o-linear-gradient(black, black, grey, #DCECF7, white, white); 
+	    background: -moz-linear-gradient(black, black, grey, #DCECF7, white); 
+	    background: linear-gradient(black, black, grey, #DCECF7, white);
+	}
+
+	
+
+
+@keyframes grow {
+	  0% { width: 0; 
+	  	 }
+	  50% { width: 100px; 
+	      }
+	  100% { width: 300px; 
+	       }
+}
+
+
+
+@-webkit-keyframes grow {
+	  0% { width: 0; 
+	  	 }
+	  50% { width: 100px; 
+	      }
+	  100% { width: 300px; 
+	       }
+}
+
+.classname { background:url(https://deepspaceindustries.com/wp-content/uploads/2015/01/asteroid-png-0.png); margin:120px 320px;  
+	-moz-border-radius: 5px;  
+	-webkit-border-radius: 5px; 
+}
+
+
+.element-animation{
+  animation: animationFrames ease 13s;
+  animation-iteration-count: infinite;
+  transform-origin: 0% 0%;
+  animation-fill-mode:forwards; /*when the spec is finished*/
+  -webkit-animation: animationFrames ease 13s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 0% 0%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  -moz-animation: animationFrames ease 13s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 0% 0%;
+  -moz-animation-fill-mode:forwards; /*FF 5+*/
+  -o-animation: animationFrames ease 13s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 0% 0%;
+  -o-animation-fill-mode:forwards; /*Not implemented yet*/
+}
+
+@keyframes animationFrames{
+  0% {
+    transform:  rotate(0deg) ;
+  }
+  20% {
+    transform:  rotate(60deg) ;
+  }
+  40% {
+    transform:  rotate(40deg) ;
+  }
+  60% {
+    transform:  rotate(54deg) ;
+  }
+  80% {
+    transform:  rotate(42deg) ;
+  }
+  100% {
+    transform:  rotate(46deg) ;
+  }
+}
+
+@-moz-keyframes animationFrames{
+  0% {
+    -moz-transform:  rotate(0deg) ;
+  }
+  20% {
+    -moz-transform:  rotate(60deg) ;
+  }
+  40% {
+    -moz-transform:  rotate(40deg) ;
+  }
+  60% {
+    -moz-transform:  rotate(54deg) ;
+  }
+  80% {
+    -moz-transform:  rotate(42deg) ;
+  }
+  100% {
+    -moz-transform:  rotate(46deg) ;
+  }
+}
+
+@-webkit-keyframes animationFrames {
+  0% {
+    -webkit-transform:  rotate(0deg) ;
+  }
+  20% {
+    -webkit-transform:  rotate(60deg) ;
+  }
+  40% {
+    -webkit-transform:  rotate(40deg) ;
+  }
+  60% {
+    -webkit-transform:  rotate(54deg) ;
+  }
+  80% {
+    -webkit-transform:  rotate(42deg) ;
+  }
+  100% {
+    -webkit-transform:  rotate(46deg) ;
+  }
+}
+
+@-o-keyframes animationFrames {
+  0% {
+    -o-transform:  rotate(0deg) ;
+  }
+  20% {
+    -o-transform:  rotate(60deg) ;
+  }
+  40% {
+    -o-transform:  rotate(40deg) ;
+  }
+  60% {
+    -o-transform:  rotate(54deg) ;
+  }
+  80% {
+    -o-transform:  rotate(42deg) ;
+  }
+  100% {
+    -o-transform:  rotate(46deg) ;
+  }
+}
+
+
+
+
+
+.floating{
+	height:120px;
+		width:120px;
+		
+    float: left;
+    -webkit-animation-name: Floatingx;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+    margin-left: 50px;
+    margin-top: 20px;
+
+}
+
+@-webkit-keyframes Floatingx{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0, 15px);}
+    to {-webkit-transform: translate(0, -0px);    }    
+}
+    
+@-moz-keyframes Floating{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0, 15px);}
+    to {-moz-transform: translate(0, -0px);}    
+}
+
+
+
+
+.floating1{
+	height:120px;
+		width:120px;
+		
+    float: left;
+    -webkit-animation-name: Floatingx;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating;
+    -moz-animation-duration: 2s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+    margin-left: 150px;
+    margin-top: 120px;
+
+}
+
+@-webkit-keyframes Floatingx{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0, 15px);}
+    to {-webkit-transform: translate(0, -0px);    }    
+}
+    
+@-moz-keyframes Floating{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0, 15px);}
+    to {-moz-transform: translate(0, -0px);}    
+}
+
+
+
+.floating2{
+	height:120px;
+		width:120px;
+		
+    float: left;
+    -webkit-animation-name: Floatingx;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+    margin-left: 20px;
+    margin-top: 300px;
+
+}
+
+@-webkit-keyframes Floatingx{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0, 15px);}
+    to {-webkit-transform: translate(0, -0px);    }    
+}
+    
+@-moz-keyframes Floating{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0, 15px);}
+    to {-moz-transform: translate(0, -0px);}    
+}
+
+
+
+
+
+
+
+.scaling{
+	padding-top:100px;
+	height:150px;
+		width:150px;
+		
+    float: left;
+    -webkit-animation-name: scalex;
+    -webkit-animation-duration:3s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:ease-in-out;
+    -moz-animation-name: scale;
+    -moz-animation-duration:3s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:ease-in-out;
+}
+    
+    @-webkit-keyframes scalex{
+        from {-webkit-transform: scale(0.9);}
+        65% {-webkit-transform: scale(1.0);}
+        to {-webkit-transform: scale(0.9);}    
+    }
+        
+    @-moz-keyframes scale{
+        from {-moz-transform: scale(0.9);}
+        65% {-moz-transform: scale(1.0);}
+        to {-moz-transform: scale(0.9);}    
+    }
+
+
+#rocket{
+		position:fixed;
+		bottom:0;
+		left:600px;
+		width:100px;
+	}
+
+
+nav {
+	height:100px; 
+	font-family:'Amatic SC', bold;
+	position:fixed;
+	/*background:black;*/
+	width: 100%;
+	top:0;
+	left:0;
+	text-align:center;
+	font-size:40px;
+	text-decoration: none;
+	line-height: 50px;
+	padding-bottom:30px;
+	border-bottom:dashed 6px;
+
+}
+
+
+nav a{
+	text-decoration: none;
+}
+nav ul {
+	padding:0;
+
+}
+
+/*Top nav items*/
+
+nav > ul > li{
+	display:inline-block;
+	padding: 0 40px;
+}
+
+nav li {
+	display:inline-block;
+	padding:0 30px;
+	vertical-align: top;
+}
+.current {
+	text-decoration: underline;
+}
+
+nav ul ul {
+	display:none;
+	position:fixed;
+	/*margin-left:-30px;*/
+}
+
+nav ul li:hover ul{
+	display:block;
+}
+
+nav ul ul li {
+	display:block;
+	vertical-align: top;
+	font-size: 0.8em;
+	margin-left:-12px;
+	list-style-type: none;
+}
+
+.collumns li{
+	display:inline-block;
+}
+
+
+
+
+
+@media (max-width: 1280px) {
+	.city {
+		width:100%;
+
+	}
+	section{
+		height:400px;
+		background-size:cover;
+		background-attachment: fixed;
+	}
+	.asteroid{
+		padding-top:190px;
+		padding-left:10px;
+		
+
+	}
+
+
+	.asteroid1{
+		padding-top:10px;
+		width:150%;
+		padding-left:500px;
+		
+
+	}
+
+	.asteroid2{
+		padding-top:50px;
+		padding-bottom:200px;
+		height:140px;
+		width:150%;
+		padding-left:800px;
+		
+
+	}
+
+	.asteroid2 img{
+		padding-left:500px;
+		padding-top:20px;
+		height:60px;
+		width:60px;
+	}
+	.jupiter{
+		/*padding-left:800px;*/
+		padding-top: 600px;
+		padding-bottom:400px;
+		height:200px;
+		width:200px;
+	}
+		
+	}
+	
+	
+	.neptune{
+		padding-top:300px;
+		padding-left:400px;
+		/*padding-top:320px;*/
+		padding-bottom:200px;
+		height:370px;
+		width:370px;
+		
+	}
+
+	.moon {
+	/*padding-left:800px;*/
+		padding-top: 600px;
+		padding-bottom:200px;
+		height:430px;
+		width:430px;
+	}
+	nav {
+	height:200px; 
+	font-family:'Amatic SC', bold, white;
+	position:fixed;
+	width: 100%;
+	top:0;
+	left:0;
+	text-align:center;
+	font-size:80px;
+	text-decoration: none;
+	line-height: 90px;
+	padding-bottom:30px;
+
+	}
+	#rocket{
+		position:fixed;
+		bottom:0;
+		left:540px;
+		width:100px;
+	}
+}
+
