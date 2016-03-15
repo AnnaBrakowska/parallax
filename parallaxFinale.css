@@ -1,26 +1,41 @@
-body{
+
+
+body {
 		background-color: black;
 		background-image:url(http://static.tumblr.com/430ac91b7ebbdda7fd66c0a8a62f99a7/nrzugzg/UQins35j1/tumblr_static_47fdi49x5r28css0ok8ws4scg.png);
 		margin: 0;
-	}
-	section{
+}
+
+
+
+.navbar-inverse {
+	position:fixed;
+	background-color: transparent;
+/*	padding-left:500px;*/
+	height:20px;
+	font-size:60px;
+	font-family:"Amatic SC", bold;
+}
+
+section {
+		width:100%;
 		height:800px;
 		background-size:cover;
 		background-attachment: fixed;
 
-	}
-	.jupiter{
+}
+
+.jupiter {
 		padding-left:800px;
 		padding-top: 400px;
 		padding-bottom:400px;
 		height:100px;
 		width:100px;
-	}
+}
 		
-	}
 	
 	
-	.neptune{
+.neptune {
 		margin-top:120px;
 		padding-left:400px;
 		/*padding-top:320px;*/
@@ -28,64 +43,47 @@ body{
 		height:170px;
 		width:170px;
 		
-	}
+}
 
-	.moon {
+.moon {
 		padding-left:800px;
-		padding-top: 50px;
-		padding-bottom:200px;
+		padding-top: 10px;
+		padding-bottom:100px;
 		height:130px;
 		width:130px;
-	}
+}
 
 
-	.sky{
+.sky {
 		background-image:url(http://static.tumblr.*//*com/430ac91b7ebbdda7fd66c0a8a62f99a7/nrzugzg/UQins35j1/tumblr_static_47fdi49x5r28css0ok8ws4scg.png);
 		background:transparent;	
-	}
-	.sky1{
+}
+	
+.sky1 {
 		background-color:black;
 		height:100px;
 		background:transparent;
-	}
-	.city img{
+}
+	
+.city img {
 		width:100%;
-		height:800px;
-		
-		
+		height:800px;	
 	}
 
 	.asteroid{
 		padding-top:390px;
-		padding-left:10px;
+		padding-left:900px;
 		
 
 	}
 
 
 	.asteroid1{
-		padding-top:20px;
-		width:150%;
-		padding-left:400px;
-		
-
-	}
-
-	.asteroid2{
 		padding-top:50px;
-		padding-bottom:200px;
-		height:140px;
-		width:150%;
-		padding-left:700px;
-		/*padding-right:400px;*/
+		width:100px;
+		height:100px;
+		padding-right:30px;	
 
-	}
-
-	.asteroid2 img{
-		padding-top:300px;
-		padding-right:300px;
-		height:60px;
-		width:60px;
 	}
 
 	
@@ -93,13 +91,6 @@ body{
 		padding-left:%;
 	}
 
-
-	/**{ margin: 0; padding: 0;}*/
-/*
-	body {
-		To hide the horizontal scroller appearing during the animation
-		overflow: hidden;
-	}*/
 
 	#clouds{
 		padding: 100px 0;
@@ -500,72 +491,6 @@ body{
 	}
 
 
-nav {
-	height:100px; 
-	font-family:'Amatic SC', bold;
-	position:fixed;
-	/*background:black;*/
-	width: 100%;
-	top:0;
-	left:0;
-	text-align:center;
-	font-size:40px;
-	text-decoration: none;
-	line-height: 50px;
-	padding-bottom:30px;
-	border-bottom:dashed 6px;
-
-}
-
-
-nav a{
-	text-decoration: none;
-}
-nav ul {
-	padding:0;
-
-}
-
-/*Top nav items*/
-
-nav > ul > li{
-	display:inline-block;
-	padding: 0 40px;
-}
-
-nav li {
-	display:inline-block;
-	padding:0 30px;
-	vertical-align: top;
-}
-.current {
-	text-decoration: underline;
-}
-
-nav ul ul {
-	display:none;
-	position:fixed;
-	/*margin-left:-30px;*/
-}
-
-nav ul li:hover ul{
-	display:block;
-}
-
-nav ul ul li {
-	display:block;
-	vertical-align: top;
-	font-size: 0.8em;
-	margin-left:-12px;
-	list-style-type: none;
-}
-
-.collumns li{
-	display:inline-block;
-}
-
-
-
 
 
 @media (max-width: 1280px) {
@@ -660,3 +585,89 @@ nav ul ul li {
 	}
 }
 
+
+
+@media (max-width: 765px) {
+	.city {
+		width:100%;
+
+	}
+	section{
+		height:400px;
+		background-size:cover;
+		background-attachment: fixed;
+	}
+	.asteroid{
+		height:40px;
+		width:40px;
+		padding-top:190px;
+		padding-left:10px;
+		
+
+	}
+
+
+	.asteroid1{
+		padding-top:10px;
+		width:100%;
+		padding-left:20px;
+		
+
+	}
+
+	.asteroid2{
+		padding-top:50px;
+		padding-bottom:100px;
+		height:30px;
+		width:30%;
+		padding-left:0px;
+		
+
+	}
+
+	.asteroid2 img{
+		padding-left:10px;
+		padding-top:20px;
+		height:20px;
+		width:20px;
+	}
+	.jupiter{
+		/*padding-left:800px;*/
+		padding-top: 600px;
+		padding-bottom:400px;
+		height:200px;
+		width:200px;
+	}
+		
+	
+
+
+	.moon {
+		padding-left:20px;
+		padding-top: 200px;
+		padding-bottom:200px;
+		height:230px;
+		width:230px;
+	}
+	
+	#rocket{
+		position:fixed;
+		bottom:0;
+		left:20px;
+		width:100px;
+	}
+
+	.navbar-inverse {
+	background-color: transparent;
+/*	padding-left:500px;*/
+	height:20px;
+	line-height: 10px;
+	font-size:40px;
+	font-family:"Amatic SC", bold;
+	}
+
+.dropdown-menu li a{
+	font-size:30px;
+
+	}
+}
